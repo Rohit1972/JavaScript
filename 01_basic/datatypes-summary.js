@@ -42,3 +42,38 @@ const myFunction=function () {
 
 
 console.log(typeof outsideTemp);
+
+
+
+
+// ++++++++++++++++++++++++++++
+
+// Stack ,Heap
+
+// Stack => Primitive
+//Heap=> Non-Primitve
+
+
+//Stack example it gives copy 
+let myYoutubeName = "rohitvlogs.com"
+
+let anotherName = myYoutubeName
+anotherName="rohitminivlogs"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+// heap eample it gives reference
+let userOne = {
+    email: "user@google.com",
+    upi:"dsk@ybl"
+}
+
+
+let userTwo = userOne
+
+userTwo.email="rohit@google.com"
+
+
+console.log(userOne.email);
+console.log(userTwo.email);
